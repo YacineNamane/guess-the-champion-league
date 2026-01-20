@@ -1,0 +1,22 @@
+.game-container {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.game-title {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.game-title:hover {
+  transform: scale(1.2);
+  color: #ff0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,17 +1,24 @@
 {
   "name": "guess-the-champion-league",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass src/styles/main.scss dist/css/main.css --watch",
-    "start": "live-server public"
+    "copy-css": "cpx dist/css/main.css public/css",
+    "copy-js": "cpx \"src/scripts/**/*\" public/scripts",
+    "watch": "concurrently \"npm run scss\" \"npm run copy-css\" \"npm run copy-js\"",
+    "start": "concurrently \"npm run watch\" \"live-server public --port=8080 --open\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cpx": "^1.5.0",
+    "live-server": "^1.2.2",
     "sass": "^1.97.2"
   }
 }

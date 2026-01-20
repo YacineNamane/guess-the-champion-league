@@ -1,0 +1,1852 @@
+{
+  "Aatrox": {
+    "name": "Aatrox",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Aatrox.png"
+  },
+  "Ahri": {
+    "name": "Ahri",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ahri.png"
+  },
+  "Akali": {
+    "name": "Akali",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Akali.png"
+  },
+  "Akshan": {
+    "name": "Akshan",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Akshan.png"
+  },
+  "Alistar": {
+    "name": "Alistar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Alistar.png"
+  },
+  "Ambessa": {
+    "name": "Ambessa",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ambessa.png"
+  },
+  "Amumu": {
+    "name": "Amumu",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Amumu.png"
+  },
+  "Anivia": {
+    "name": "Anivia",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Anivia.png"
+  },
+  "Annie": {
+    "name": "Annie",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Annie.png"
+  },
+  "Aphelios": {
+    "name": "Aphelios",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Aphelios.png"
+  },
+  "Ashe": {
+    "name": "Ashe",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ashe.png"
+  },
+  "AurelionSol": {
+    "name": "Aurelion Sol",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/AurelionSol.png"
+  },
+  "Aurora": {
+    "name": "Aurora",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Aurora.png"
+  },
+  "Azir": {
+    "name": "Azir",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Azir.png"
+  },
+  "Bard": {
+    "name": "Bard",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Bard.png"
+  },
+  "Belveth": {
+    "name": "Bel'Veth",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Belveth.png"
+  },
+  "Blitzcrank": {
+    "name": "Blitzcrank",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Blitzcrank.png"
+  },
+  "Brand": {
+    "name": "Brand",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Brand.png"
+  },
+  "Braum": {
+    "name": "Braum",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Braum.png"
+  },
+  "Briar": {
+    "name": "Briar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Briar.png"
+  },
+  "Caitlyn": {
+    "name": "Caitlyn",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Caitlyn.png"
+  },
+  "Camille": {
+    "name": "Camille",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Camille.png"
+  },
+  "Cassiopeia": {
+    "name": "Cassiopeia",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Cassiopeia.png"
+  },
+  "Chogath": {
+    "name": "Cho'Gath",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Chogath.png"
+  },
+  "Corki": {
+    "name": "Corki",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Corki.png"
+  },
+  "Darius": {
+    "name": "Darius",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Darius.png"
+  },
+  "Diana": {
+    "name": "Diana",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Diana.png"
+  },
+  "Draven": {
+    "name": "Draven",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Draven.png"
+  },
+  "DrMundo": {
+    "name": "Dr. Mundo",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/DrMundo.png"
+  },
+  "Ekko": {
+    "name": "Ekko",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ekko.png"
+  },
+  "Elise": {
+    "name": "Elise",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Elise.png"
+  },
+  "Evelynn": {
+    "name": "Evelynn",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Evelynn.png"
+  },
+  "Ezreal": {
+    "name": "Ezreal",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ezreal.png"
+  },
+  "Fiddlesticks": {
+    "name": "Fiddlesticks",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Fiddlesticks.png"
+  },
+  "Fiora": {
+    "name": "Fiora",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Fiora.png"
+  },
+  "Fizz": {
+    "name": "Fizz",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Fizz.png"
+  },
+  "Galio": {
+    "name": "Galio",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Galio.png"
+  },
+  "Gangplank": {
+    "name": "Gangplank",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Gangplank.png"
+  },
+  "Garen": {
+    "name": "Garen",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Garen.png"
+  },
+  "Gnar": {
+    "name": "Gnar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Gnar.png"
+  },
+  "Gragas": {
+    "name": "Gragas",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Gragas.png"
+  },
+  "Graves": {
+    "name": "Graves",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Graves.png"
+  },
+  "Gwen": {
+    "name": "Gwen",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Gwen.png"
+  },
+  "Hecarim": {
+    "name": "Hecarim",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Hecarim.png"
+  },
+  "Heimerdinger": {
+    "name": "Heimerdinger",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Heimerdinger.png"
+  },
+  "Hwei": {
+    "name": "Hwei",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Hwei.png"
+  },
+  "Illaoi": {
+    "name": "Illaoi",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Illaoi.png"
+  },
+  "Irelia": {
+    "name": "Irelia",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Irelia.png"
+  },
+  "Ivern": {
+    "name": "Ivern",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ivern.png"
+  },
+  "Janna": {
+    "name": "Janna",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Janna.png"
+  },
+  "JarvanIV": {
+    "name": "Jarvan IV",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/JarvanIV.png"
+  },
+  "Jax": {
+    "name": "Jax",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Jax.png"
+  },
+  "Jayce": {
+    "name": "Jayce",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Jayce.png"
+  },
+  "Jhin": {
+    "name": "Jhin",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Jhin.png"
+  },
+  "Jinx": {
+    "name": "Jinx",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Jinx.png"
+  },
+  "Kaisa": {
+    "name": "Kai'Sa",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kaisa.png"
+  },
+  "Kalista": {
+    "name": "Kalista",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kalista.png"
+  },
+  "Karma": {
+    "name": "Karma",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Karma.png"
+  },
+  "Karthus": {
+    "name": "Karthus",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Karthus.png"
+  },
+  "Kassadin": {
+    "name": "Kassadin",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kassadin.png"
+  },
+  "Katarina": {
+    "name": "Katarina",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Katarina.png"
+  },
+  "Kayle": {
+    "name": "Kayle",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kayle.png"
+  },
+  "Kayn": {
+    "name": "Kayn",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kayn.png"
+  },
+  "Kennen": {
+    "name": "Kennen",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kennen.png"
+  },
+  "Khazix": {
+    "name": "Kha'Zix",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Khazix.png"
+  },
+  "Kindred": {
+    "name": "Kindred",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kindred.png"
+  },
+  "Kled": {
+    "name": "Kled",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Kled.png"
+  },
+  "KogMaw": {
+    "name": "Kog'Maw",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/KogMaw.png"
+  },
+  "KSante": {
+    "name": "K'Sante",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/KSante.png"
+  },
+  "Leblanc": {
+    "name": "LeBlanc",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Leblanc.png"
+  },
+  "LeeSin": {
+    "name": "Lee Sin",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/LeeSin.png"
+  },
+  "Leona": {
+    "name": "Leona",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Leona.png"
+  },
+  "Lillia": {
+    "name": "Lillia",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Lillia.png"
+  },
+  "Lissandra": {
+    "name": "Lissandra",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Lissandra.png"
+  },
+  "Lucian": {
+    "name": "Lucian",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Lucian.png"
+  },
+  "Lulu": {
+    "name": "Lulu",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Lulu.png"
+  },
+  "Lux": {
+    "name": "Lux",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Lux.png"
+  },
+  "Malphite": {
+    "name": "Malphite",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Malphite.png"
+  },
+  "Malzahar": {
+    "name": "Malzahar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Malzahar.png"
+  },
+  "Maokai": {
+    "name": "Maokai",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Maokai.png"
+  },
+  "MasterYi": {
+    "name": "Master Yi",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/MasterYi.png"
+  },
+  "Mel": {
+    "name": "Mel",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Mel.png"
+  },
+  "Milio": {
+    "name": "Milio",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Milio.png"
+  },
+  "MissFortune": {
+    "name": "Miss Fortune",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/MissFortune.png"
+  },
+  "MonkeyKing": {
+    "name": "Wukong",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/MonkeyKing.png"
+  },
+  "Mordekaiser": {
+    "name": "Mordekaiser",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Mordekaiser.png"
+  },
+  "Morgana": {
+    "name": "Morgana",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Morgana.png"
+  },
+  "Naafiri": {
+    "name": "Naafiri",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Naafiri.png"
+  },
+  "Nami": {
+    "name": "Nami",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nami.png"
+  },
+  "Nasus": {
+    "name": "Nasus",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nasus.png"
+  },
+  "Nautilus": {
+    "name": "Nautilus",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nautilus.png"
+  },
+  "Neeko": {
+    "name": "Neeko",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Neeko.png"
+  },
+  "Nidalee": {
+    "name": "Nidalee",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nidalee.png"
+  },
+  "Nilah": {
+    "name": "Nilah",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nilah.png"
+  },
+  "Nocturne": {
+    "name": "Nocturne",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nocturne.png"
+  },
+  "Nunu": {
+    "name": "Nunu & Willump",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Nunu.png"
+  },
+  "Olaf": {
+    "name": "Olaf",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Olaf.png"
+  },
+  "Orianna": {
+    "name": "Orianna",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Orianna.png"
+  },
+  "Ornn": {
+    "name": "Ornn",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ornn.png"
+  },
+  "Pantheon": {
+    "name": "Pantheon",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Pantheon.png"
+  },
+  "Poppy": {
+    "name": "Poppy",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Poppy.png"
+  },
+  "Pyke": {
+    "name": "Pyke",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Pyke.png"
+  },
+  "Qiyana": {
+    "name": "Qiyana",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Qiyana.png"
+  },
+  "Quinn": {
+    "name": "Quinn",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Quinn.png"
+  },
+  "Rakan": {
+    "name": "Rakan",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Rakan.png"
+  },
+  "Rammus": {
+    "name": "Rammus",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Rammus.png"
+  },
+  "RekSai": {
+    "name": "Rek'Sai",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/RekSai.png"
+  },
+  "Rell": {
+    "name": "Rell",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Rell.png"
+  },
+  "Renata": {
+    "name": "Renata Glasc",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Renata.png"
+  },
+  "Renekton": {
+    "name": "Renekton",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Renekton.png"
+  },
+  "Rengar": {
+    "name": "Rengar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Rengar.png"
+  },
+  "Riven": {
+    "name": "Riven",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Riven.png"
+  },
+  "Rumble": {
+    "name": "Rumble",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Rumble.png"
+  },
+  "Ryze": {
+    "name": "Ryze",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ryze.png"
+  },
+  "Samira": {
+    "name": "Samira",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Samira.png"
+  },
+  "Sejuani": {
+    "name": "Sejuani",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sejuani.png"
+  },
+  "Senna": {
+    "name": "Senna",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Senna.png"
+  },
+  "Seraphine": {
+    "name": "Seraphine",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Seraphine.png"
+  },
+  "Sett": {
+    "name": "Sett",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sett.png"
+  },
+  "Shaco": {
+    "name": "Shaco",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Shaco.png"
+  },
+  "Shen": {
+    "name": "Shen",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Shen.png"
+  },
+  "Shyvana": {
+    "name": "Shyvana",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Shyvana.png"
+  },
+  "Singed": {
+    "name": "Singed",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Singed.png"
+  },
+  "Sion": {
+    "name": "Sion",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sion.png"
+  },
+  "Sivir": {
+    "name": "Sivir",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sivir.png"
+  },
+  "Skarner": {
+    "name": "Skarner",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Skarner.png"
+  },
+  "Smolder": {
+    "name": "Smolder",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Smolder.png"
+  },
+  "Sona": {
+    "name": "Sona",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sona.png"
+  },
+  "Soraka": {
+    "name": "Soraka",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Soraka.png"
+  },
+  "Swain": {
+    "name": "Swain",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Swain.png"
+  },
+  "Sylas": {
+    "name": "Sylas",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Sylas.png"
+  },
+  "Syndra": {
+    "name": "Syndra",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Syndra.png"
+  },
+  "TahmKench": {
+    "name": "Tahm Kench",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/TahmKench.png"
+  },
+  "Taliyah": {
+    "name": "Taliyah",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Taliyah.png"
+  },
+  "Talon": {
+    "name": "Talon",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Talon.png"
+  },
+  "Taric": {
+    "name": "Taric",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Taric.png"
+  },
+  "Teemo": {
+    "name": "Teemo",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Teemo.png"
+  },
+  "Thresh": {
+    "name": "Thresh",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Thresh.png"
+  },
+  "Tristana": {
+    "name": "Tristana",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Tristana.png"
+  },
+  "Trundle": {
+    "name": "Trundle",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Trundle.png"
+  },
+  "Tryndamere": {
+    "name": "Tryndamere",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Tryndamere.png"
+  },
+  "TwistedFate": {
+    "name": "Twisted Fate",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/TwistedFate.png"
+  },
+  "Twitch": {
+    "name": "Twitch",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Twitch.png"
+  },
+  "Udyr": {
+    "name": "Udyr",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Udyr.png"
+  },
+  "Urgot": {
+    "name": "Urgot",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Urgot.png"
+  },
+  "Varus": {
+    "name": "Varus",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Varus.png"
+  },
+  "Vayne": {
+    "name": "Vayne",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Vayne.png"
+  },
+  "Veigar": {
+    "name": "Veigar",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Veigar.png"
+  },
+  "Velkoz": {
+    "name": "Vel'Koz",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Velkoz.png"
+  },
+  "Vex": {
+    "name": "Vex",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Vex.png"
+  },
+  "Vi": {
+    "name": "Vi",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Vi.png"
+  },
+  "Viego": {
+    "name": "Viego",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Viego.png"
+  },
+  "Viktor": {
+    "name": "Viktor",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Viktor.png"
+  },
+  "Vladimir": {
+    "name": "Vladimir",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Vladimir.png"
+  },
+  "Volibear": {
+    "name": "Volibear",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Volibear.png"
+  },
+  "Warwick": {
+    "name": "Warwick",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Warwick.png"
+  },
+  "Xayah": {
+    "name": "Xayah",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Xayah.png"
+  },
+  "Xerath": {
+    "name": "Xerath",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Xerath.png"
+  },
+  "XinZhao": {
+    "name": "Xin Zhao",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/XinZhao.png"
+  },
+  "Yasuo": {
+    "name": "Yasuo",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Yasuo.png"
+  },
+  "Yone": {
+    "name": "Yone",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Yone.png"
+  },
+  "Yorick": {
+    "name": "Yorick",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Yorick.png"
+  },
+  "Yunara": {
+    "name": "Yunara",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Yunara.png"
+  },
+  "Yuumi": {
+    "name": "Yuumi",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Yuumi.png"
+  },
+  "Zaahen": {
+    "name": "Zaahen",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Fighter",
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zaahen.png"
+  },
+  "Zac": {
+    "name": "Zac",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Tank",
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zac.png"
+  },
+  "Zed": {
+    "name": "Zed",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Assassin",
+    "tags": [
+      "Assassin"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zed.png"
+  },
+  "Zeri": {
+    "name": "Zeri",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Marksman",
+    "tags": [
+      "Marksman"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zeri.png"
+  },
+  "Ziggs": {
+    "name": "Ziggs",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Ziggs.png"
+  },
+  "Zilean": {
+    "name": "Zilean",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Support",
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zilean.png"
+  },
+  "Zoe": {
+    "name": "Zoe",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zoe.png"
+  },
+  "Zyra": {
+    "name": "Zyra",
+    "gender": "unknown",
+    "region": "unknown",
+    "lane": "Mage",
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Zyra.png"
+  }
+}
