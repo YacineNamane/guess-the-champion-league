@@ -15,21 +15,19 @@ async function buildGameData() {
 
     gameData[champKey] = {
       name: champ.name,
-      gender: "unknown", // à compléter manuellement après
-      region: "unknown", // à compléter manuellement après
-      lane: champ.tags[0] || "unknown", // par défaut on peut prendre le premier tag Riot
+      gender: "unknown",
+      region: "unknown",
+      lane: champ.tags[0] || "unknown",
       tags: champ.tags || [],
       image: `http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/${champ.image.full}`,
     };
   }
 
-  // Écrire dans un fichier JSON
   fs.writeFileSync(
     "src/scripts/data/gameData.json",
-    JSON.stringify(gameData, null, 2)
+    JSON.stringify(gameData, null, 2),
   );
   console.log("JSON généré avec succès !");
 }
 
-// Exécution du script
 buildGameData();
