@@ -4,13 +4,13 @@ import { compareChampions } from "./compareChampions.js";
 import { getRandomChampion } from "../utils/randomChampion.js";
 
 let champions = {};
+const app = document.getElementById("app");
 
 async function loadChampions() {
   try {
     const res = await fetch("scripts/data/gameData.json");
     if (!res.ok) throw new Error("Impossible de charger le JSON");
     champions = await res.json();
-    console.log("Champions loaded:", champions);
   } catch (err) {
     console.error(err);
   }
@@ -29,17 +29,29 @@ function buildGameUI() {
   input.setAttribute("list", "championList");
   inputDiv.appendChild(dataList);
 
+  const submitButton = document.createElement("button");
+  submitButton.type = "button";
+  submitButton.textContent = "Submit";
+  submitButton.addEventListener("click", handleInput);
+  inputDiv.appendChild(submitButton);
+
+  const startButton = document.createElement("button");
+  startButton.type = "button";
+  startButton.textContent = "Start Game";
+  startButton.addEventListener("click", () => {
+    startGame(champions);
+    startTimer();
+    startButton.disabled = true;
+    console.log("Secret champion:", gameState.secretChampion.name);
+  });
+  inputDiv.appendChild(startButton);
+
   input.addEventListener("input", () => {
-    if (input.value.length > 0) {
-      input.value = input.value.charAt(0).toUpperCase() + input.value.slice(1);
-    }
-    const value = input.value;
     dataList.innerHTML = "";
+    const value = input.value;
     if (!value) return;
-
     const searchValue =
-      value.charAt(0).toLocaleUpperCase() + value.slice(1).toLocaleLowerCase();
-
+      value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
     Object.keys(champions)
       .filter((champ) => champ.startsWith(searchValue))
       .forEach((champ) => {
@@ -49,20 +61,11 @@ function buildGameUI() {
       });
   });
 
-  const submitButton = document.createElement("button");
-  submitButton.textContent = "Submit";
-  submitButton.addEventListener("click", handleInput);
-  inputDiv.appendChild(submitButton);
-
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
-
       const firstOption = dataList.querySelector("option");
-      if (firstOption) {
-        input.value = firstOption.value;
-      }
-
+      if (firstOption) input.value = firstOption.value;
       submitButton.click();
     }
   });
@@ -74,17 +77,13 @@ function buildGameUI() {
   scoreDiv.id = "score";
   scoreDiv.textContent = `You've guessed: ${gameState.score} Champions!`;
 
-  document.body.append(inputDiv, filtersDiv, scoreDiv);
+  app.append(inputDiv, filtersDiv, scoreDiv);
 }
 
 function handleInput() {
   const inputName = document.getElementById("championInput").value;
   const inputChampion = champions[inputName];
-
-  if (!inputChampion) {
-    alert("This champion does not exist");
-    return;
-  }
+  if (!inputChampion) return alert("This champion does not exist");
 
   const result = compareChampions(inputChampion, gameState.secretChampion);
   gameState.currentGuesses.push({ champion: inputChampion, result });
@@ -92,9 +91,11 @@ function handleInput() {
 
   if (inputChampion.name === gameState.secretChampion.name) {
     gameState.score += 1;
+    gameState.currentGuesses = [];
+    updateFiltersUI(gameState.currentGuesses);
     gameState.secretChampion = getRandomChampion(champions);
+    console.log("Secret champion:", gameState.secretChampion.name);
     document.getElementById("championInput").value = "";
-    console.log("Next secret champion:", gameState.secretChampion.name);
     document.getElementById("score").textContent =
       `You've guessed: ${gameState.score} Champions!`;
   }
@@ -103,6 +104,8 @@ function handleInput() {
 function updateFiltersUI(history) {
   const filtersDiv = document.getElementById("filters");
   filtersDiv.innerHTML = "";
+
+  if (history.length === 0) return;
 
   const friendlyNames = {
     gender: "Gender",
@@ -115,62 +118,76 @@ function updateFiltersUI(history) {
     tags: "Tags",
   };
 
-  history.forEach((entry) => {
-    const attemptDiv = document.createElement("div");
-    attemptDiv.style.marginBottom = "12px";
-    attemptDiv.style.display = "flex";
-    attemptDiv.style.alignItems = "center";
-    attemptDiv.style.gap = "8px";
+  const table = document.createElement("table");
+  table.id = "filtersTable";
 
+  const thead = document.createElement("thead");
+  const headerRow = document.createElement("tr");
+
+  const thPortrait = document.createElement("th");
+  thPortrait.textContent = "Portrait";
+  headerRow.appendChild(thPortrait);
+
+  for (const key in friendlyNames) {
+    const th = document.createElement("th");
+    th.textContent = friendlyNames[key];
+    headerRow.appendChild(th);
+  }
+  thead.appendChild(headerRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+
+  history.forEach((entry) => {
+    const row = document.createElement("tr");
+
+    const tdPortrait = document.createElement("td");
     const img = document.createElement("img");
     img.src = entry.champion.image;
     img.alt = entry.champion.name;
-    img.style.width = "60px";
-    img.style.height = "60px";
-    img.style.borderRadius = "8px";
-    attemptDiv.appendChild(img);
+    img.className = "portrait";
+    tdPortrait.appendChild(img);
 
-    const badgesDiv = document.createElement("div");
-    badgesDiv.style.display = "flex";
-    badgesDiv.style.flexWrap = "wrap";
-    badgesDiv.style.gap = "4px";
+    row.appendChild(tdPortrait);
 
-    for (const key in entry.result) {
-      const color = entry.result[key];
-      const value = Array.isArray(entry.champion[key])
-        ? entry.champion[key].join(", ")
-        : entry.champion[key];
+    for (const key in friendlyNames) {
+      const td = document.createElement("td");
+      td.className = entry.result[key];
 
-      const span = document.createElement("span");
-      span.textContent = `${friendlyNames[key] || key}: ${value}`;
-      span.style.backgroundColor = color;
-      span.style.color = "white";
-      span.style.padding = "4px 8px";
-      span.style.borderRadius = "5px";
-      span.style.display = "inline-block";
+      let value = entry.champion[key];
+      if (Array.isArray(value)) {
+        td.innerHTML = "";
+        value.forEach((v) => {
+          const tag = document.createElement("span");
+          tag.className = "tag";
+          tag.textContent = v;
+          td.appendChild(tag);
+        });
+      } else {
+        td.textContent = value;
+      }
 
-      badgesDiv.appendChild(span);
+      row.appendChild(td);
     }
 
-    attemptDiv.appendChild(badgesDiv);
-    filtersDiv.appendChild(attemptDiv);
+    tbody.appendChild(row);
   });
+
+  table.appendChild(tbody);
+  filtersDiv.appendChild(table);
 }
 
 function startTimer() {
   const timerDiv = document.createElement("div");
   timerDiv.id = "timer";
-  document.body.appendChild(timerDiv);
+  app.appendChild(timerDiv);
+
+  gameState.isRunning = true;
 
   const timerInterval = setInterval(() => {
-    if (!gameState.isRunning) {
-      clearInterval(timerInterval);
-      return;
-    }
-
+    if (!gameState.isRunning) return clearInterval(timerInterval);
     gameState.timeLeft -= 1;
     timerDiv.textContent = `Time left: ${gameState.timeLeft}s`;
-
     if (gameState.timeLeft <= 0) {
       clearInterval(timerInterval);
       gameState.isRunning = false;
@@ -181,11 +198,5 @@ function startTimer() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   await loadChampions();
-
-  document.getElementById("startButton").addEventListener("click", () => {
-    startGame(champions);
-    buildGameUI();
-    startTimer();
-    console.log("Secret champion:", gameState.secretChampion.name);
-  });
+  buildGameUI();
 });

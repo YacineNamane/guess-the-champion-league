@@ -1,22 +1,278 @@
-.game-container {
-  background-color: #222;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  margin: 20px auto;
-  width: fit-content;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.game-title {
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+p,
+span,
+input,
+button {
+  font-family: "Inter", sans-serif;
+  color: #111827;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+input#championInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(114.3023255814, 139.8837209302, 175.6976744186);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+input#championInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+
+button {
+  margin-top: 0.5rem;
+  background-color: #3b82f6;
   color: #fff;
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+button:hover {
+  opacity: 0.85;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button#startGame {
+  background-color: #facc15;
+  color: #1f2937;
+}
+button#startGame:hover {
+  transform: scale(1.05);
+}
+
+#filters {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#filters > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
+#filters > div:hover {
+  transform: translateY(-2px);
+}
+#filters > div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+#filters > div div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+#filters > div div span {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+#filters > div div span.green {
+  background-color: #4ade80;
+  color: #fff;
+}
+#filters > div div span.orange {
+  background-color: #fbbf24;
+  color: #fff;
+}
+#filters > div div span.red {
+  background-color: #f87171;
+  color: #fff;
+}
 
-.game-title:hover {
-  transform: scale(1.2);
-  color: #ff0;
+#score {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+#timer {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3b82f6;
+  margin-top: 0.5rem;
+}
+
+#filtersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+#filtersTable th,
+#filtersTable td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+#filtersTable th {
+  background-color: #222;
+  color: #fff;
+  font-weight: 600;
+}
+#filtersTable td.red {
+  background-color: #f56260;
+  color: #fff;
+}
+#filtersTable td.orange {
+  background-color: #f5a860;
+  color: #fff;
+}
+#filtersTable td.green {
+  background-color: #60f57a;
+  color: #111;
+}
+#filtersTable tr:nth-child(even) td {
+  opacity: 0.9;
+}
+#filtersTable #filtersTable td img.portrait {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#filtersTable #filtersTable td span {
+  vertical-align: middle;
+  font-weight: 500;
+}
+#filtersTable #filtersTable td .tag {
+  display: inline-block;
+  background-color: #007bff !important;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 2px 2px 2px 0;
+}
+
+#app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+input#championInput {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#filters {
+  margin-top: 20px;
+}
+
+#filters div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#filters img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+#filters span {
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#timer {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.green {
+  background-color: rgb(2, 146, 2);
+}
+
+.orange {
+  background-color: rgb(255, 123, 0);
+}
+
+.red {
+  background-color: rgb(248, 36, 36);
 }
 
 /*# sourceMappingURL=main.css.map */

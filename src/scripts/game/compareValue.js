@@ -1,11 +1,13 @@
 export function compareValue(input, secret) {
-  const inputArr = Array.isArray(input)
-    ? input.map((i) => (i ? i.toLowerCase() : ""))
-    : [input ? input.toLowerCase() : ""];
+  const normalize = (val) => {
+    if (!val) return [""];
+    if (Array.isArray(val))
+      return val.map((v) => (v ? v.toString().trim().toLowerCase() : ""));
+    return [val.toString().trim().toLowerCase()];
+  };
 
-  const secretArr = Array.isArray(secret)
-    ? secret.map((i) => (i ? i.toLowerCase() : ""))
-    : [secret ? secret.toLowerCase() : ""];
+  const inputArr = normalize(input);
+  const secretArr = normalize(secret);
 
   const common = inputArr.filter((i) => secretArr.includes(i));
 

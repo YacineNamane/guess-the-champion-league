@@ -1,0 +1,101 @@
+#app {
+  @include flex-center(column, flex-start, flex-start);
+  padding: $spacing-lg;
+  gap: $spacing-lg;
+}
+
+input#championInput {
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid lighten($color-primary, 40%);
+  border-radius: $border-radius;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  transition: border-color $transition-base;
+
+  &:focus {
+    outline: none;
+    border-color: $color-secondary;
+    box-shadow: 0 0 8px rgba($color-secondary, 0.4);
+  }
+}
+
+button {
+  margin-top: $spacing-sm;
+  @include button-base($color-secondary, #fff);
+}
+
+button#startGame {
+  background-color: $color-accent;
+  color: $color-primary;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+#filters {
+  display: grid;
+  gap: $spacing-md;
+  margin-top: $spacing-lg;
+}
+
+#filters > div {
+  display: flex;
+  gap: $spacing-md;
+  align-items: center;
+  background: #fff;
+  padding: $spacing-sm;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform $transition-base;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+
+    span {
+      padding: $spacing-xs $spacing-sm;
+      border-radius: $border-radius;
+      font-size: 0.85rem;
+      font-weight: 600;
+      &.green {
+        background-color: #4ade80;
+        color: #fff;
+      }
+      &.orange {
+        background-color: #fbbf24;
+        color: #fff;
+      }
+      &.red {
+        background-color: #f87171;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#score {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: $color-primary;
+}
+
+#timer {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $color-secondary;
+  margin-top: $spacing-sm;
+}

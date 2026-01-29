@@ -1,0 +1,59 @@
+#filtersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #222;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  td.red {
+    background-color: #f56260;
+    color: #fff;
+  }
+  td.orange {
+    background-color: #f5a860;
+    color: #fff;
+  }
+  td.green {
+    background-color: #60f57a;
+    color: #111;
+  }
+
+  tr:nth-child(even) td {
+    opacity: 0.9;
+  }
+  #filtersTable td img.portrait {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  #filtersTable td span {
+    vertical-align: middle;
+    font-weight: 500;
+  }
+  #filtersTable td .tag {
+    display: inline-block;
+    background-color: #007bff !important;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin: 2px 2px 2px 0;
+  }
+}

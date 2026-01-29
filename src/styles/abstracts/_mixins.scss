@@ -1,0 +1,26 @@
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button-base($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all $transition-base;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
