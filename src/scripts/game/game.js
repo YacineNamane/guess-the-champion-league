@@ -16,8 +16,36 @@ async function loadChampions() {
   }
 }
 
+function buildLandingPage() {
+  app.innerHTML = "";
+
+  const landing = document.createElement("div");
+  landing.classList.add("landing-page");
+
+  const gif = document.createElement("img");
+  gif.src = "assets/bgmyth.webp";
+  gif.alt = "Background";
+
+  const title = document.createElement("h1");
+  title.textContent = "Guess the Champion";
+
+  const playButton = document.createElement("button");
+  playButton.textContent = "Play";
+
+  playButton.addEventListener("click", async () => {
+    await loadChampions();
+    app.innerHTML = "";
+    app.classList.add("game-mode");
+    buildGameUI();
+  });
+
+  landing.append(gif, title, playButton);
+  app.appendChild(landing);
+}
+
 function buildGameUI() {
   const inputDiv = document.createElement("div");
+
   const input = document.createElement("input");
   input.id = "championInput";
   input.placeholder = "Type Any champion to begin with ...";
@@ -42,7 +70,6 @@ function buildGameUI() {
     startGame(champions);
     startTimer();
     startButton.disabled = true;
-    console.log("Secret champion:", gameState.secretChampion.name);
   });
   inputDiv.appendChild(startButton);
 
@@ -50,8 +77,10 @@ function buildGameUI() {
     dataList.innerHTML = "";
     const value = input.value;
     if (!value) return;
+
     const searchValue =
       value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+
     Object.keys(champions)
       .filter((champ) => champ.startsWith(searchValue))
       .forEach((champ) => {
@@ -68,6 +97,11 @@ function buildGameUI() {
       if (firstOption) input.value = firstOption.value;
       submitButton.click();
     }
+  });
+
+  submitButton.addEventListener("click", () => {
+    input.value = "";
+    dataList.innerHTML = "";
   });
 
   const filtersDiv = document.createElement("div");
@@ -95,7 +129,6 @@ function handleInput() {
     updateFiltersUI(gameState.currentGuesses);
     gameState.secretChampion = getRandomChampion(champions);
     console.log("Secret champion:", gameState.secretChampion.name);
-    document.getElementById("championInput").value = "";
     document.getElementById("score").textContent =
       `You've guessed: ${gameState.score} Champions!`;
   }
@@ -104,7 +137,6 @@ function handleInput() {
 function updateFiltersUI(history) {
   const filtersDiv = document.getElementById("filters");
   filtersDiv.innerHTML = "";
-
   if (history.length === 0) return;
 
   const friendlyNames = {
@@ -120,7 +152,6 @@ function updateFiltersUI(history) {
 
   const table = document.createElement("table");
   table.id = "filtersTable";
-
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
 
@@ -133,6 +164,7 @@ function updateFiltersUI(history) {
     th.textContent = friendlyNames[key];
     headerRow.appendChild(th);
   }
+
   thead.appendChild(headerRow);
   table.appendChild(thead);
 
@@ -145,21 +177,17 @@ function updateFiltersUI(history) {
     const img = document.createElement("img");
     img.src = entry.champion.image;
     img.alt = entry.champion.name;
-    img.className = "portrait";
     tdPortrait.appendChild(img);
-
     row.appendChild(tdPortrait);
 
     for (const key in friendlyNames) {
       const td = document.createElement("td");
       td.className = entry.result[key];
 
-      let value = entry.champion[key];
+      const value = entry.champion[key];
       if (Array.isArray(value)) {
-        td.innerHTML = "";
         value.forEach((v) => {
           const tag = document.createElement("span");
-          tag.className = "tag";
           tag.textContent = v;
           td.appendChild(tag);
         });
@@ -196,7 +224,6 @@ function startTimer() {
   }, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await loadChampions();
-  buildGameUI();
+document.addEventListener("DOMContentLoaded", () => {
+  buildLandingPage();
 });

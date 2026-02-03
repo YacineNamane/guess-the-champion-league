@@ -1,59 +1,63 @@
-#filtersTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
+.game-mode {
+  #filtersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
 
-  th,
-  td {
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    text-align: center;
-  }
+    th,
+    td {
+      border: 1px solid #ccc !important;
+      padding: 8px 12px !important;
+      text-align: center !important;
+    }
 
-  th {
-    background-color: #222;
-    color: #fff;
-    font-weight: 600;
-  }
+    th {
+      background-color: #222 !important;
+      color: #fff !important;
+      font-weight: 600 !important;
+    }
 
-  td.red {
-    background-color: #f56260;
-    color: #fff;
-  }
-  td.orange {
-    background-color: #f5a860;
-    color: #fff;
-  }
-  td.green {
-    background-color: #60f57a;
-    color: #111;
-  }
+    td.red {
+      background-color: #f56260 !important;
+      color: #fff !important;
+    }
+    td.orange {
+      background-color: #f5a860 !important;
+      color: #fff !important;
+    }
+    td.green {
+      background-color: #60f57a !important;
+      color: #111 !important;
+    }
 
-  tr:nth-child(even) td {
-    opacity: 0.9;
-  }
-  #filtersTable td img.portrait {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
+    tr:nth-child(even) td {
+      opacity: 0.9 !important;
+    }
 
-  #filtersTable td span {
-    vertical-align: middle;
-    font-weight: 500;
-  }
-  #filtersTable td .tag {
-    display: inline-block;
-    background-color: #007bff !important;
-    color: #fff;
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin: 2px 2px 2px 0;
+    td img.portrait {
+      width: 50px !important;
+      height: 50px !important;
+      object-fit: cover !important;
+      border-radius: 5px !important;
+      margin-right: 8px !important;
+      vertical-align: middle !important;
+    }
+
+    td span {
+      vertical-align: middle !important;
+      font-weight: 500 !important;
+    }
+
+    td .tag {
+      display: inline-block !important;
+      background-color: #007bff !important;
+      color: #fff !important;
+      font-size: 0.7rem !important;
+      font-weight: 500 !important;
+      padding: 2px 6px !important;
+      border-radius: 4px !important;
+      margin: 2px 2px 2px 0 !important;
+    }
   }
 }
