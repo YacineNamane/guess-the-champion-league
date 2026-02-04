@@ -2,6 +2,7 @@ import { startGame } from "./startGame.js";
 import { gameState } from "./gameState.js";
 import { compareChampions } from "./compareChampions.js";
 import { getRandomChampion } from "../utils/randomChampion.js";
+import { typewriter } from "../utils/typewriter.js";
 
 let champions = {};
 const app = document.getElementById("app");
@@ -27,7 +28,10 @@ function buildLandingPage() {
   gif.alt = "Background";
 
   const title = document.createElement("h1");
-  title.textContent = "Guess the Champion";
+  title.textContent = "Guess The Champion";
+
+  const description = document.createElement("p");
+  description.classList.add("landing-description");
 
   const playButton = document.createElement("button");
   playButton.textContent = "Play";
@@ -39,8 +43,19 @@ function buildLandingPage() {
     buildGameUI();
   });
 
-  landing.append(gif, title, playButton);
+  landing.append(gif, title, description, playButton);
   app.appendChild(landing);
+
+  typewriter({
+    element: description,
+    texts: [
+      "Test your League of Legends knowledge.",
+      "Guess the champion using clues and attributes.",
+      "Only real mains will make it before time runs out.",
+    ],
+    speed: 150,
+    delayBetween: 1400,
+  });
 }
 
 function buildGameUI() {

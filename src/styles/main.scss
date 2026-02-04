@@ -4,8 +4,9 @@
 @import "base/typography";
 @import "base/base";
 @import "components/filtersTable";
+
 #app {
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 input#championInput {
@@ -89,32 +90,83 @@ button:hover {
 
   h1 {
     position: absolute;
-    bottom: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 260px;
+    height: 60%;
     left: 20px;
     color: #fff;
-    font-size: 2rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 4rem;
+    font-weight: 900;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, #ff0000, #f70c63, white);
+    -webkit-background-clip: text;
   }
 
+  .landing-description {
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+    max-width: 1024px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+  }
   button {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    width: 215px;
+    bottom: 125px;
+    right: 56px;
     padding: 12px 24px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #4caf50;
-    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    background-color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, #ff0000, #f70c63, white);
+    -webkit-background-clip: text;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition:
       background 0.3s,
       transform 0.2s;
 
     &:hover {
-      background-color: #45a049;
       transform: scale(1.05);
     }
+  }
+}
+.type-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.6;
+  color: white;
+  font-size: 2rem;
+  min-height: 1.5em;
+}
+
+.cursor::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
   }
 }
