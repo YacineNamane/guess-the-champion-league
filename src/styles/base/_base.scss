@@ -1,11 +1,10 @@
 #app {
-  @include flex-center(column, flex-start, flex-start);
+  @include flex-center(column, flex-start, center);
   gap: $spacing-lg;
 }
 
 input#championInput {
   padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius;
   width: 100%;
   max-width: 400px;
   font-size: 1rem;
@@ -21,6 +20,7 @@ input#championInput {
 button {
   margin-top: $spacing-sm;
   @include button-base($color-secondary, #fff);
+  border-radius: 0px !important;
 }
 
 button#startGame {
@@ -86,14 +86,26 @@ button#startGame {
 }
 
 #score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-weight: 700;
   font-size: 1.25rem;
-  color: $color-primary;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #ff0000, #f70c63, white);
+  -webkit-background-clip: text;
 }
 
 #timer {
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 800;
   font-size: 1rem;
-  color: $color-secondary;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #ff0000, #f70c63, white);
+  -webkit-background-clip: text;
   margin-top: $spacing-sm;
 }

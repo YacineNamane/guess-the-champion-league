@@ -28,7 +28,7 @@ function buildLandingPage() {
   gif.alt = "Background";
 
   const title = document.createElement("h1");
-  title.textContent = "Guess The Champion";
+  title.innerHTML = "Guess The<br> Champion";
 
   const description = document.createElement("p");
   description.classList.add("landing-description");
@@ -50,8 +50,8 @@ function buildLandingPage() {
     element: description,
     texts: [
       "Test your League of Legends knowledge.",
-      "Guess the champion using clues and attributes.",
-      "Only real mains will make it before time runs out.",
+      "Guess as many champions as you can.",
+      "Before time runs out!",
     ],
     speed: 150,
     delayBetween: 1400,
@@ -60,6 +60,7 @@ function buildLandingPage() {
 
 function buildGameUI() {
   const inputDiv = document.createElement("div");
+  inputDiv.classList.add("search-section");
 
   const input = document.createElement("input");
   input.id = "championInput";
@@ -229,14 +230,62 @@ function startTimer() {
 
   const timerInterval = setInterval(() => {
     if (!gameState.isRunning) return clearInterval(timerInterval);
+
     gameState.timeLeft -= 1;
     timerDiv.textContent = `Time left: ${gameState.timeLeft}s`;
+
     if (gameState.timeLeft <= 0) {
       clearInterval(timerInterval);
       gameState.isRunning = false;
-      alert(`Time's up! Your score: ${gameState.score}`);
+      showEndModal();
     }
-  }, 1000);
+  }, 500);
+}
+
+function showEndModal() {
+  const overlay = document.createElement("div");
+  overlay.className = "modal-overlay";
+
+  const modal = document.createElement("div");
+  modal.className = "end-modal";
+  modal.id = "end-modal";
+
+  modal.innerHTML = `
+    <h2>⏱ Time's up!</h2>
+    <p>You've guessed <strong>${gameState.score}</strong> champions</p>
+
+    <div class="modal-actions">
+      <button id="shareScore">Share Score</button>
+      <button id="restartGame">Play Again</button>
+    </div>
+  `;
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  document
+    .getElementById("restartGame")
+    .addEventListener("click", () => location.reload());
+
+  document.getElementById("shareScore").addEventListener("click", shareScore);
+}
+
+function shareScore() {
+  const text = `I guessed ${gameState.score} champions on Guess The Champion 🏆`;
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "Guess The Champion",
+      text,
+      url,
+    });
+  } else {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      text,
+    )}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, "_blank");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

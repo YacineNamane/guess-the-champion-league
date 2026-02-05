@@ -1,7 +1,7 @@
 export function typewriter({
   element,
   texts,
-  speed = 80,
+  speed = 60,
   delayBetween = 1200,
 }) {
   const lines = texts.map(() => {

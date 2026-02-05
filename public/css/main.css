@@ -41,13 +41,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 }
 
 input#championInput {
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
   width: 100%;
   max-width: 400px;
   font-size: 1rem;
@@ -76,6 +75,9 @@ button:hover {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+button {
+  border-radius: 0px !important;
 }
 
 button#startGame {
@@ -136,46 +138,111 @@ button#startGame:hover {
 }
 
 #score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-weight: 700;
   font-size: 1.25rem;
-  color: #1f2937;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #ff0000, #f70c63, white);
+  -webkit-background-clip: text;
 }
 
 #timer {
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 800;
   font-size: 1rem;
-  color: #3b82f6;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #ff0000, #f70c63, white);
+  -webkit-background-clip: text;
   margin-top: 0.5rem;
 }
 
+.game-mode {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: rgba(10, 1, 5, 0.6392156863);
+}
+.game-mode::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/bgmyth.webp") center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+.game-mode::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: -2;
+}
+.game-mode #filters {
+  max-height: 70vh;
+  width: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.game-mode #filters thead th {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  color: #fff;
+  font-weight: 900;
+  z-index: 10;
+}
+.game-mode #filters::-webkit-scrollbar {
+  width: 10px;
+}
+.game-mode #filters::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.game-mode #filters::-webkit-scrollbar-thumb {
+  background: rgba(228, 1, 114, 0.7);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.game-mode #filters::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 149);
+}
 .game-mode #filtersTable {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 .game-mode #filtersTable th,
 .game-mode #filtersTable td {
   border: 1px solid #ccc !important;
   padding: 8px 12px !important;
   text-align: center !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable th {
   background-color: #222 !important;
   color: #fff !important;
-  font-weight: 600 !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable td.red {
   background-color: #f56260 !important;
   color: #fff !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable td.orange {
   background-color: #f5a860 !important;
   color: #fff !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable td.green {
   background-color: #60f57a !important;
-  color: #111 !important;
+  color: #00041d !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable tr:nth-child(even) td {
   opacity: 0.9 !important;
@@ -184,22 +251,20 @@ button#startGame:hover {
   width: 50px !important;
   height: 50px !important;
   object-fit: cover !important;
-  border-radius: 5px !important;
   margin-right: 8px !important;
   vertical-align: middle !important;
 }
 .game-mode #filtersTable td span {
   vertical-align: middle !important;
-  font-weight: 500 !important;
+  font-weight: 900 !important;
 }
 .game-mode #filtersTable td .tag {
   display: inline-block !important;
   background-color: #007bff !important;
   color: #fff !important;
   font-size: 0.7rem !important;
-  font-weight: 500 !important;
+  font-weight: 900 !important;
   padding: 2px 6px !important;
-  border-radius: 4px !important;
   margin: 2px 2px 2px 0 !important;
 }
 
@@ -214,19 +279,24 @@ input#championInput {
   font-size: 16px;
 }
 
+.search-section {
+  height: 325px;
+  padding-top: 200px;
+  align-self: center;
+}
+
 button {
   padding: 8px 12px;
   margin-left: 8px;
-  border-radius: 5px;
   border: none;
-  background-color: #4caf50;
+  background-color: #db1a4e;
   color: white;
   cursor: pointer;
   font-size: 16px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #7a0029;
 }
 
 #filters {
@@ -243,7 +313,6 @@ button:hover {
 #filters img {
   width: 60px;
   height: 60px;
-  border-radius: 8px;
 }
 
 #filters span {
@@ -292,11 +361,11 @@ button:hover {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  bottom: 260px;
+  bottom: 285px;
   height: 60%;
   left: 20px;
   color: #fff;
-  font-size: 4rem;
+  font-size: 5.5rem;
   font-weight: 900;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   background: linear-gradient(90deg, #ff0000, #f70c63, white);
@@ -305,7 +374,7 @@ button:hover {
 .landing-page .landing-description {
   position: absolute;
   left: 30px;
-  bottom: 0px;
+  bottom: 40px;
   max-width: 1024px;
   width: 100%;
   height: 20%;
@@ -313,7 +382,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-end;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2rem;
@@ -361,6 +430,41 @@ button:hover {
   25%, 75% {
     opacity: 0;
   }
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.end-modal {
+  background: #0f0f0f;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  max-width: 450px;
+  width: 90%;
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.end-modal button {
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.end-modal h2 {
+  font-weight: 900;
+  color: #db1a4e;
 }
 
 /*# sourceMappingURL=main.css.map */

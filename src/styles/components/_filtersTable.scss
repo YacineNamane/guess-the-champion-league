@@ -1,34 +1,93 @@
 .game-mode {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #0a0105a3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/bgmyth.webp") center/cover no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    z-index: -2;
+  }
+
+  #filters {
+    max-height: 70vh;
+    width: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #filters thead th {
+    position: sticky;
+    top: 0;
+    background-color: #222;
+    color: #fff;
+    font-weight: 900;
+    z-index: 10;
+  }
+
+  #filters::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  #filters::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  #filters::-webkit-scrollbar-thumb {
+    background: rgba(228, 1, 114, 0.7);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #filters::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 149);
+  }
+
   #filtersTable {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+    font-family: $font-base;
 
     th,
     td {
       border: 1px solid #ccc !important;
       padding: 8px 12px !important;
       text-align: center !important;
+      font-weight: 900 !important;
     }
 
     th {
       background-color: #222 !important;
       color: #fff !important;
-      font-weight: 600 !important;
+      font-weight: 900 !important;
     }
 
     td.red {
       background-color: #f56260 !important;
       color: #fff !important;
+      font-weight: 900 !important;
     }
     td.orange {
       background-color: #f5a860 !important;
       color: #fff !important;
+      font-weight: 900 !important;
     }
     td.green {
       background-color: #60f57a !important;
-      color: #111 !important;
+      color: #00041d !important;
+      font-weight: 900 !important;
     }
 
     tr:nth-child(even) td {
@@ -39,14 +98,13 @@
       width: 50px !important;
       height: 50px !important;
       object-fit: cover !important;
-      border-radius: 5px !important;
       margin-right: 8px !important;
       vertical-align: middle !important;
     }
 
     td span {
       vertical-align: middle !important;
-      font-weight: 500 !important;
+      font-weight: 900 !important;
     }
 
     td .tag {
@@ -54,9 +112,8 @@
       background-color: #007bff !important;
       color: #fff !important;
       font-size: 0.7rem !important;
-      font-weight: 500 !important;
+      font-weight: 900 !important;
       padding: 2px 6px !important;
-      border-radius: 4px !important;
       margin: 2px 2px 2px 0 !important;
     }
   }
