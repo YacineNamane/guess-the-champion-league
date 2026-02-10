@@ -3,7 +3,7 @@
     "name": "Aatrox",
     "gender": "male",
     "species": "darkin",
-    "regions": ["Shurima", "Runeterra"],
+    "region": ["Shurima", "Runeterra"],
     "lane": "top",
     "resource": "No mana",
     "rangeType": "melee",
@@ -1722,7 +1722,7 @@
     "region": ["Freljord", "Ionia"],
     "lane": "jungle",
     "resource": "Mana",
-    "rangeType": "ranged",
+    "rangeType": "melee",
     "esportPresence": "low",
     "tags": ["Fighter", "Tank"],
     "image": "http://ddragon.leagueoflegends.com/cdn/16.1.1/img/champion/Udyr.png"

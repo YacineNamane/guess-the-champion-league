@@ -3,6 +3,11 @@ import { gameState } from "./gameState.js";
 import { compareChampions } from "./compareChampions.js";
 import { getRandomChampion } from "../utils/randomChampion.js";
 import { typewriter } from "../utils/typewriter.js";
+import {
+  animateFiltersTable,
+  animateLastRow,
+  animateChampionRow,
+} from "../animations/filterAnimation.js";
 
 let champions = {};
 const app = document.getElementById("app");
@@ -141,12 +146,22 @@ function handleInput() {
 
   if (inputChampion.name === gameState.secretChampion.name) {
     gameState.score += 1;
-    gameState.currentGuesses = [];
-    updateFiltersUI(gameState.currentGuesses);
-    gameState.secretChampion = getRandomChampion(champions);
-    console.log("Secret champion:", gameState.secretChampion.name);
-    document.getElementById("score").textContent =
-      `You've guessed: ${gameState.score} Champions!`;
+
+    const table = document.getElementById("filtersTable");
+    const rows = table.querySelectorAll("tbody tr");
+    const lastRow = rows[rows.length - 1];
+
+    animateChampionRow(lastRow, () => {
+      setTimeout(() => {
+        gameState.currentGuesses = [];
+        updateFiltersUI(gameState.currentGuesses);
+
+        gameState.secretChampion = getRandomChampion(champions);
+        console.log("Secret champion:", gameState.secretChampion.name);
+        document.getElementById("score").textContent =
+          `You've guessed: ${gameState.score} Champions!`;
+      }, 200);
+    });
   }
 }
 
@@ -219,6 +234,12 @@ function updateFiltersUI(history) {
 
   table.appendChild(tbody);
   filtersDiv.appendChild(table);
+
+  if (history.length === 1) {
+    animateFiltersTable();
+  } else {
+    animateLastRow();
+  }
 }
 
 function startTimer() {
