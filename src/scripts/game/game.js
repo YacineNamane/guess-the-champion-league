@@ -8,6 +8,8 @@ import {
   animateLastRow,
   animateChampionRow,
 } from "../animations/filterAnimation.js";
+import { playAnimation } from "../animations/playAnimation.js";
+import { playTransition } from "../animations/playTransition.js";
 
 let champions = {};
 const app = document.getElementById("app");
@@ -40,8 +42,19 @@ function buildLandingPage() {
 
   const playButton = document.createElement("button");
   playButton.textContent = "Play";
+  playButton.classList.add("play-btn");
+  playButton.innerHTML = `
+  <span class="border left"></span>
+  <span class="border right"></span>
+  <span class="border top"></span>
+  <span class="border bottom"></span>
+  <span class="btn-text">Play</span>
+`;
 
-  playButton.addEventListener("click", async () => {
+  landing.append(gif, title, description, playButton);
+  app.appendChild(landing);
+
+  playTransition(async () => {
     await loadChampions();
     app.innerHTML = "";
     app.classList.add("game-mode");
@@ -61,6 +74,7 @@ function buildLandingPage() {
     speed: 150,
     delayBetween: 1400,
   });
+  playAnimation();
 }
 
 function buildGameUI() {
