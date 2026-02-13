@@ -42,7 +42,7 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 input#championInput {
@@ -54,7 +54,7 @@ input#championInput {
 }
 input#championInput:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: rgb(255, 12, 53);
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
 }
 
@@ -144,9 +144,7 @@ button#startGame:hover {
   width: 100%;
   font-weight: 700;
   font-size: 1.25rem;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(90deg, #ff0000, #f70c63, white);
-  -webkit-background-clip: text;
+  color: rgb(255, 189, 246);
 }
 
 #timer {
@@ -216,6 +214,7 @@ button#startGame:hover {
   width: 100%;
   border-collapse: collapse;
   font-family: "Inter", system-ui, sans-serif;
+  text-transform: capitalize;
 }
 .game-mode #filtersTable th,
 .game-mode #filtersTable td {
@@ -272,6 +271,17 @@ button#startGame:hover {
   font-family: inherit;
 }
 
+.logo-section {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.logo-section img {
+  width: 135px;
+  height: auto;
+}
+
 input#championInput {
   padding: 8px;
   border-radius: 5px;
@@ -280,8 +290,8 @@ input#championInput {
 }
 
 .search-section {
-  height: 325px;
-  padding-top: 200px;
+  width: 50%;
+  height: 55px;
   align-self: center;
 }
 
@@ -326,6 +336,15 @@ button:hover {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
+}
+
+#scoreValue {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #ffe0ef;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #timer {
@@ -523,10 +542,6 @@ button:hover {
 
 .play-btn .bottom {
   bottom: 0;
-}
-
-.play-btn:hover {
-  background-color: #fed7ff;
 }
 
 /*# sourceMappingURL=main.css.map */

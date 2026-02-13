@@ -9,6 +9,17 @@
   font-family: inherit;
 }
 
+.logo-section {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.logo-section img {
+  width: 135px;
+  height: auto;
+}
+
 input#championInput {
   padding: 8px;
   border-radius: 5px;
@@ -16,8 +27,8 @@ input#championInput {
   font-size: 16px;
 }
 .search-section {
-  height: 325px;
-  padding-top: 200px;
+  width: 50%;
+  height: 55px;
   align-self: center;
 }
 
@@ -62,6 +73,15 @@ button:hover {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
+}
+
+#scoreValue {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #ffe0ef;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #timer {
@@ -223,7 +243,6 @@ button:hover {
 .play-btn .btn-text {
   position: relative;
   z-index: 2;
-
   background: linear-gradient(90deg, #ff0000, #f70c63, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

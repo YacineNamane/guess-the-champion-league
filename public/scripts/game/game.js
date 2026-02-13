@@ -10,6 +10,7 @@ import {
 } from "../animations/filterAnimation.js";
 import { playAnimation } from "../animations/playAnimation.js";
 import { playTransition } from "../animations/playTransition.js";
+import { scoreAnimation } from "../animations/scoreAnimation.js";
 
 let champions = {};
 const app = document.getElementById("app");
@@ -78,6 +79,14 @@ function buildLandingPage() {
 }
 
 function buildGameUI() {
+  const logoDiv = document.createElement("div");
+  logoDiv.classList.add("logo-section");
+
+  const logo = document.createElement("img");
+  logo.src = "assets/ChampGuesser.png";
+  logo.alt = "Game Logo";
+  logoDiv.appendChild(logo);
+
   const inputDiv = document.createElement("div");
   inputDiv.classList.add("search-section");
 
@@ -144,9 +153,13 @@ function buildGameUI() {
 
   const scoreDiv = document.createElement("div");
   scoreDiv.id = "score";
-  scoreDiv.textContent = `You've guessed: ${gameState.score} Champions!`;
+  scoreDiv.innerHTML = `
+  You've guessed :
+  <span id="scoreValue">${gameState.score}</span>
+  Champions!
+`;
 
-  app.append(inputDiv, filtersDiv, scoreDiv);
+  app.append(logoDiv, inputDiv, filtersDiv, scoreDiv);
 }
 
 function handleInput() {
@@ -161,6 +174,10 @@ function handleInput() {
   if (inputChampion.name === gameState.secretChampion.name) {
     gameState.score += 1;
 
+    const scoreValue = document.getElementById("scoreValue");
+    scoreValue.textContent = gameState.score;
+    scoreAnimation(scoreValue);
+
     const table = document.getElementById("filtersTable");
     const rows = table.querySelectorAll("tbody tr");
     const lastRow = rows[rows.length - 1];
@@ -172,8 +189,6 @@ function handleInput() {
 
         gameState.secretChampion = getRandomChampion(champions);
         console.log("Secret champion:", gameState.secretChampion.name);
-        document.getElementById("score").textContent =
-          `You've guessed: ${gameState.score} Champions!`;
       }, 200);
     });
   }
@@ -249,6 +264,11 @@ function updateFiltersUI(history) {
   table.appendChild(tbody);
   filtersDiv.appendChild(table);
 
+  filtersDiv.scrollTo({
+    top: filtersDiv.scrollHeight,
+    behavior: "smooth",
+  });
+
   if (history.length === 1) {
     animateFiltersTable();
   } else {
@@ -262,6 +282,7 @@ function startTimer() {
   app.appendChild(timerDiv);
 
   gameState.isRunning = true;
+  console.log("Secret champion:", gameState.secretChampion.name);
 
   const timerInterval = setInterval(() => {
     if (!gameState.isRunning) return clearInterval(timerInterval);

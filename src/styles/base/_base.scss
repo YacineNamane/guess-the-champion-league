@@ -1,6 +1,6 @@
 #app {
   @include flex-center(column, flex-start, center);
-  gap: $spacing-lg;
+  gap: $spacing-md;
 }
 
 input#championInput {
@@ -12,7 +12,7 @@ input#championInput {
 
   &:focus {
     outline: none;
-    border-color: $color-secondary;
+    border-color: rgb(255, 12, 53);
     box-shadow: 0 0 8px rgba($color-secondary, 0.4);
   }
 }
@@ -92,9 +92,7 @@ button#startGame {
   width: 100%;
   font-weight: 700;
   font-size: 1.25rem;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(90deg, #ff0000, #f70c63, white);
-  -webkit-background-clip: text;
+  color: rgb(255, 189, 246);
 }
 
 #timer {
